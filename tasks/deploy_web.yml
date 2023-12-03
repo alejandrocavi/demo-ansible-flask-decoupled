@@ -7,7 +7,10 @@
        - flask-mysql
 
     - name: Copy web-server code
-      copy: src=app.py dest=/opt/app.py
+      copy: src=application.py dest=/home/ansadmin/python-flask-aws-beanstalk/application.py
 
     - name: Start web-application
-      shell: FLASK_APP=/opt/app.py nohup flask run --host=0.0.0.0 &
+      shell: FLASK_APP=/home/ansadmin/python-flask-aws-beanstalk/application.py nohup flask run --host=0.0.0.0 &
+
+
+      
