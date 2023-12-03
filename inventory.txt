@@ -1,0 +1,17 @@
+[ubuntu_servers]
+ubuntu ansible_host=172.31.24.175 ansible_sudo_pass=1234
+
+[ec2_servers]
+docker_host ansible_host=172.31.24.17
+
+[ansible]
+ansible_controller ansible_host=172.31.18.132
+
+[jenkins]
+172.31.21.209
+
+[ubuntu]
+172.31.24.175
+
+[db_and_web_servers]
+db_and_web_server1 ansible_host=172.31.24.175 ansible_sudo_pass=1234
